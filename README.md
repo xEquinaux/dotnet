@@ -9,22 +9,21 @@ It works basically like this.
 <br>
 To create a database object and write values to it:
 <br>
-<br>
 
 ```cs
+int num0 = -1;
 DataStore data = new DataStore("database_file");
 Block _block = data.NewBlock([ "Key1", "Key2", "Key3" ], "Chunk");
-_block.WriteValue("Key1", "Value1");
+_block.WriteValue("Key1", num0);
 
 data.WriteToFile();
 ```
 
-<br>
 To read from a database file:
 <br>
 
 ```cs
 DataStore data = new DataStore("database_file");
 Block _block = data.GetBlock("Chunk");
-int Value1 = int.Parse(_block.GetValue("Key1"));
+int num0 = int.Parse(_block.GetValue("Key1"));
 ```
