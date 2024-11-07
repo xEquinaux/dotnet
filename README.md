@@ -1,9 +1,10 @@
 # dotnet
 #### version 2
-<br>
+<hr>
 This was written for small applications that needed persistent values to be saved without something like WPF's resources and EXE property storage. In effect this is a string-based storage system. It is very simple to learn to be quaint.
 <br><br>
 It works basically like this.
+<br><br>
 ```csharp
 // To create a database object and write values to it:
 
@@ -14,6 +15,7 @@ _block.WriteValue("Key1", "Value1");
 
 data.WriteToFile();
 ```
+<br><br>
 ```csharp
 // To read from a database file:
 
