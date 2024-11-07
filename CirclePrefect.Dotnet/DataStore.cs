@@ -212,12 +212,12 @@ public class DataStore
 				int num4 = 0;
 				if (array[i].StartsWith("["))
 				{
-					block[num] = new Block
+					block.Add(new Block
 					{
 						Heading = array[i - 1],
 						RawData = new string[1001],
 						active = true
-					};
+					});
 					block[num].RawData[0] = array[i - 1];
 					block[num].RawData[1] = "[";
 				}
